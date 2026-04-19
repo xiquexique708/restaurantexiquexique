@@ -1,0 +1,724 @@
+/* para resoluções de 360px ou menos */
+@media (max-width: 360px) {
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		display: grid;
+		grid-template-rows: 95% 5%;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+	
+	#corpo {
+		display: grid;
+		grid-template-rows: 70% 30%;
+	}
+	
+	#corpo_sup {
+		background: url('../img/background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-bottom: 2px solid #fff;
+	}
+	
+	#corpo_sup img.logo {
+		position: absolute;
+		top: 2%;
+		left: 3%;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+		border: 2px solid #333;
+		opacity: 0.8;
+		width: 25%;
+	}
+	
+	#corpo_sup div#text_princ {
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 10%;
+		top: 30%;
+	}
+	
+	#corpo_sup div#text_princ h1 {
+		display: block;
+		font-size: 1.5rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ h3 {
+		display: block;
+		font-size: 0.8rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ span {
+		display: block;
+		width: 90%;
+		background-color: #ea1d2c;
+		position: relative;
+		left: 5%;
+		top: 20px;
+		padding: 25px 0px;
+		text-align: center;
+		line-height: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+	
+	#corpo_sup div#text_princ span img {
+		width: 15%;
+		position: absolute;
+		right: 10px;
+		top: 5px;
+	}
+	
+	#corpo_inf {
+		background-color: #fff;
+	}
+	
+	#corpo_inf div.icon {
+		display: flex;
+		flex-direction: rows;
+		justify-content: space-between;
+		position: relative;
+		top: -20%;
+		left: 7.5%;
+		width: 85%;
+		height: 140%;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	#corpo_inf div.icon div {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0);
+		width: 32%;
+		height: 80%;
+		overflow: hidden;
+		padding: 0px;
+	}
+	
+	#corpo_inf div.icon div img {
+		width: 80%;
+		position: relative;
+		top: 5px;
+		left: 10%;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	#corpo_inf div.icon div h3 {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#corpo_inf div.icon div span {
+		font-family: Arial, sans-serif;
+		font-size: 9px;
+		display: block;
+		text-align: center;
+		padding: 0px 8px;
+	}
+	
+	footer {
+		background: #2f1f10;
+	}
+	
+	footer span {
+		font-size: 0.5rem;
+		color: #fff;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 11px 0px;
+		line-height: 20px;
+	}
+
+}
+
+/**************************** Configurações para Smartphones com telas de 480px *************************/
+
+@media (min-width: 361px) and (max-width: 480px) {
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		display: grid;
+		grid-template-rows: 95% 5%;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+
+/************************** Configurações do modal ****************************/
+	body div#modal_whatsapp {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		top: 0px;
+		left: 0px;
+	}
+
+	body div#modal_whatsapp div#corpo_modal {
+		width: 98%;
+		background-color: #fff;
+		height: 50%;
+		border-radius: 5px 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: -100%;
+	}
+
+	body div#modal_whatsapp div#corpo_modal span.fechar {
+		display: inline-block;
+		background-color: #ea1d2c;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: #fff;
+		width: 40px;
+		height: 30px;
+		padding: 1px;
+		cursor: pointer;
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		line-height: 32px;
+	}
+
+	body div#modal_whatsapp div#corpo_modal h1 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 2rem;
+		color: #333;
+	}
+
+	body div#modal_whatsapp div#corpo_modal a {
+		text-decoration: none;
+		display: block;
+		width: 70%;
+	}
+
+	body div#modal_whatsapp div#corpo_modal span {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px 0px;
+		background-color: #ea1d2c;
+		border-radius: 5px 5px;
+		box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+		padding: 15px 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1rem;
+		color: #fff;
+		font-weight: bold;
+	}
+/******************** Fim das configurações do modal *******************************/
+	
+	#corpo {
+		display: grid;
+		grid-template-rows: 70% 30%;
+	}
+	
+	#corpo_sup {
+		background: url('../img/background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-bottom: 2px solid #fff;
+	}
+	
+	#corpo_sup img.logo {
+		position: absolute;
+		top: 2%;
+		left: 3%;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+		border: 2px solid #333;
+		opacity: 0.8;
+		width: 25%;
+	}
+	
+	#corpo_sup div#text_princ {
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 10%;
+		top: 25%;
+	}
+	
+	#corpo_sup div#text_princ h1 {
+		display: block;
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ h3 {
+		display: block;
+		font-size: 1rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ span {
+		display: block;
+		width: 90%;
+		background-color: #ea1d2c;
+		position: relative;
+		left: 5%;
+		top: 20px;
+		padding: 25px 0px;
+		text-align: center;
+		line-height: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+	
+	#corpo_sup div#text_princ span img {
+		width: 10%;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	
+	#corpo_inf {
+		background-color: #fff;
+	}
+	
+	#corpo_inf div.icon {
+		display: flex;
+		flex-direction: rows;
+		justify-content: space-between;
+		position: relative;
+		top: -20%;
+		left: 7.5%;
+		width: 85%;
+		height: 140%;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	#corpo_inf div.icon div {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0);
+		width: 30%;
+		height: 80%;
+		overflow: hidden;
+		padding: 0px;
+	}
+	
+	#corpo_inf div.icon div img {
+		width: 70%;
+		position: relative;
+		top: 5px;
+		left: 15%;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	#corpo_inf div.icon div h3 {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#corpo_inf div.icon div span {
+		font-family: Arial, sans-serif;
+		font-size: 9px;
+		display: block;
+		text-align: center;
+		padding: 0px 8px;
+	}
+	
+	footer {
+		background: #2f1f10;
+	}
+	
+	footer span {
+		font-size: 0.5rem;
+		color: #fff;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 11px 0px;
+		line-height: 20px;
+	}	
+}
+
+
+/**************************** Configurações para Smartphones com telas de 600px *************************/
+
+@media (min-width: 481px) and (max-width: 600px) {
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		display: grid;
+		grid-template-rows: 95% 5%;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+	
+	#corpo {
+		display: grid;
+		grid-template-rows: 70% 30%;
+	}
+	
+	#corpo_sup {
+		background: url('../img/background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-bottom: 2px solid #fff;
+	}
+	
+	#corpo_sup img.logo {
+		position: absolute;
+		top: 2%;
+		left: 3%;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+		border: 2px solid #333;
+		opacity: 0.8;
+		width: 20%;
+	}
+	
+	#corpo_sup div#text_princ {
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 10%;
+		top: 20%;
+	}
+	
+	#corpo_sup div#text_princ h1 {
+		display: block;
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ h3 {
+		display: block;
+		font-size: 1rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ span {
+		display: block;
+		width: 80%;
+		background-color: #ea1d2c;
+		position: relative;
+		left: 10%;
+		top: 20px;
+		padding: 25px 0px;
+		text-align: center;
+		line-height: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+	
+	#corpo_sup div#text_princ span img {
+		width: 10%;
+		position: absolute;
+		right: 15px;
+		top: 5px;
+	}
+	
+	#corpo_inf {
+		background-color: #fff;
+	}
+	
+	#corpo_inf div.icon {
+		display: flex;
+		flex-direction: rows;
+		justify-content: space-between;
+		position: relative;
+		top: -22%;
+		left: 10%;
+		width: 80%;
+		height: 140%;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	#corpo_inf div.icon div {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0);
+		width: 25%;
+		height: 80%;
+		overflow: hidden;
+		padding: 0px;
+	}
+	
+	#corpo_inf div.icon div img {
+		width: 70%;
+		position: relative;
+		top: 5px;
+		left: 15%;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	#corpo_inf div.icon div h3 {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#corpo_inf div.icon div span {
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		display: block;
+		text-align: center;
+		padding: 0px 8px;
+	}
+	
+	footer {
+		background: #2f1f10;
+	}
+	
+	footer span {
+		font-size: 0.7rem;
+		color: #fff;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 11px 0px;
+		line-height: 20px;
+	}	
+}
+
+
+/**************************** Configurações para Smartphones com telas de 768px *************************/
+
+@media (min-width: 601px) and (max-width: 768px) {
+	html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		font-family: Arial, sans-serif;
+		display: grid;
+		grid-template-rows: 95% 5%;
+		margin: 0;
+		padding: 0;
+		color: #333;
+	}
+	
+	#corpo {
+		display: grid;
+		grid-template-rows: 70% 30%;
+	}
+	
+	#corpo_sup {
+		background: url('../img/background.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-bottom: 2px solid #fff;
+	}
+	
+	#corpo_sup img.logo {
+		position: absolute;
+		top: 2%;
+		left: 3%;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+		border: 2px solid #333;
+		opacity: 0.8;
+		width: 15%;
+	}
+	
+	#corpo_sup div#text_princ {
+		width: 80%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 10%;
+		top: 20%;
+	}
+	
+	#corpo_sup div#text_princ h1 {
+		display: block;
+		font-size: 2rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ h3 {
+		display: block;
+		font-size: 1rem;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+	}
+	
+	#corpo_sup div#text_princ span {
+		display: block;
+		width: 70%;
+		background-color: #ea1d2c;
+		position: relative;
+		left: 15%;
+		top: 20px;
+		padding: 30px 0px;
+		text-align: center;
+		line-height: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 10px 10px;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+	
+	#corpo_sup div#text_princ span img {
+		width: 10%;
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+	
+	#corpo_inf {
+		background-color: #fff;
+	}
+	
+	#corpo_inf div.icon {
+		display: flex;
+		flex-direction: rows;
+		justify-content: space-between;
+		position: relative;
+		top: -22%;
+		left: 10%;
+		width: 80%;
+		height: 140%;
+		background-color: rgba(0, 0, 0, 0);
+	}
+	
+	#corpo_inf div.icon div {
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, 0);
+		width: 28%;
+		height: 80%;
+		overflow: hidden;
+		padding: 0px;
+	}
+	
+	#corpo_inf div.icon div img {
+		width: 60%;
+		position: relative;
+		top: 5px;
+		left: 20%;
+		border-radius: 50%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	}
+	
+	#corpo_inf div.icon div h3 {
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#corpo_inf div.icon div span {
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+		display: block;
+		text-align: center;
+		padding: 0px 8px;
+	}
+	
+	footer {
+		background: #2f1f10;
+	}
+	
+	footer span {
+		font-size: 0.7rem;
+		color: #fff;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 11px 0px;
+		line-height: 20px;
+	}	
+}
